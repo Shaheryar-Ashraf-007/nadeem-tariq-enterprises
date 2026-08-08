@@ -1,0 +1,162 @@
+@import "tailwindcss";
+/* --- Base Reset & Scrollbar Hide --- */
+/* --- Particles Setup --- */
+body {
+  background-size: 400% 400%;
+  background-color: #FFFFFF;
+  animation: gradientMove 18s ease-in-out infinite;
+}
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  25% {
+    background-position: 100% 50%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  75% {
+    background-position: 0% 100%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* ==========================
+   Base Styles
+========================== */
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  --font-body: "Poppins", sans-serif;
+
+
+}
+
+.dark body {
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+}
+
+/* ==========================
+   Hide Scrollbars
+========================== */
+
+/* Chrome, Edge & Safari */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+/* ==========================
+   Selection
+========================== */
+
+::selection {
+  background: var(--color-brass);
+  color: var(--color-paper);
+}
+
+/* ==========================
+   Focus Styles
+========================== */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-brass);
+  outline-offset: 3px;
+}
+
+/* ==========================
+   Reduced Motion
+========================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ==========================
+   Grain Texture Utility
+========================== */
+
+.grain-texture {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+}
+
+/* ==========================
+   Images
+========================== */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ==========================
+   Prevent Horizontal Overflow
+========================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+@keyframes blob {
+  0% {
+    transform: translate(0,0) scale(1);
+  }
+
+  33% {
+    transform: translate(40px,-60px) scale(1.1);
+  }
+
+  66% {
+    transform: translate(-30px,20px) scale(.95);
+  }
+
+  100% {
+    transform: translate(0,0) scale(1);
+  }
+}
+
+.animate-blob{
+    animation:blob 18s infinite ease-in-out;
+}
+
+.animation-delay-2000{
+    animation-delay:2s;
+}
+
+.animation-delay-4000{
+    animation-delay:4s;
+}
