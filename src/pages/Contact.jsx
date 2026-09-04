@@ -2,6 +2,7 @@ import { useState } from 'react'
 import PageHeader from '../components/PageHeader'
 import { divisions } from '../data/divisions'
 import { Mail, Phone, MapPin, Send, CheckCircle2 } from 'lucide-react'
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
@@ -9,10 +10,29 @@ export default function Contact() {
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value })
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    setSubmitted(true)
-  }
+  const SERVICE_ID = "service_druhq9c";
+  const TEMPLATE_ID = "template_jobwrb6";
+  const PUBLIC_KEY = "25l-rTXo6ha4ytlEq";
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+        await emailjs.sendForm(
+            SERVICE_ID,
+            TEMPLATE_ID,
+            e.target,
+            PUBLIC_KEY
+        );
+
+        alert("Message sent successfully!");
+        e.target.reset();
+
+    } catch (error) {
+        console.error("EmailJS Error:", error);
+        alert("Failed to send message. Please try again.");
+    }
+};
 
   return (
     <div>

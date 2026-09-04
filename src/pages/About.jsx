@@ -11,23 +11,23 @@ import {
 
 const timeline = [
   {
-    year: "1998",
+    year: "2017",
     text: "Founded in Lahore as a single-line offset printing ink formulator, supplying two local press houses.",
   },
   {
-    year: "2005",
+    year: "2022",
     text: "Kids Garment division opens after a founding client asked us to source school-uniform fabric alongside ink.",
   },
   {
-    year: "2011",
+    year: "2015",
     text: "Pet Supplies division launches, sourcing feeding and grooming products for regional retail chains.",
   },
   {
-    year: "2016",
+    year: "2018",
     text: "Mobile Parts & Accessories division added to serve repair networks and retail counters directly.",
   },
   {
-    year: "2023",
+    year: "2022",
     text: "Testing lab consolidated across all four divisions under one shared quality office.",
   },
 ];

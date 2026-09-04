@@ -14,7 +14,7 @@ export default function Footer() {
             <span className="mt-4 max-w-xs text-sm leading-relaxed text-ink/65 dark:text-paper/65">
               A diversified trading house operating four independent <br />
               divisions from one shared
-              standard of sourcing, testing <br /> and delivery, since 1998.
+              standard of sourcing, testing <br /> and delivery, since 2011.
             </span>
 
         <div className="pt-12 grid gap-10 md:grid-cols-3 grid-cols-2">
@@ -73,7 +73,13 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail size={15} className="shrink-0 text-red-600" />
-                <span>trade@nadeementerprises.com.pk</span>
+                <span>info@nadeementerprises.com.pk</span>
+              </li>
+              <li className="flex items-center gap-2.5">
+                <Mail size={15} className="shrink-0 text-red-600" />
+                <span>nadeem.enterprises@hotmail.com</span>
+
+
               </li>
             </ul>
           </div>
