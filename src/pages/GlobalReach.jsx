@@ -48,7 +48,7 @@ export default function GlobalReach() {
         eyebrow="Global reach"
         title="Twenty-plus markets, served from one dispatch office in Lahore."
         description="Every division exports independently, but shipping, documentation and freight booking run through a single logistics desk so clients only deal with one point of contact regardless of what they're ordering."
-        image="/public/office.jpeg"
+        image="/office.jpeg"
       />
 
       <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10">

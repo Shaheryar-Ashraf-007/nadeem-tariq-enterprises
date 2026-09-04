@@ -45,7 +45,7 @@ export default function Contact() {
        <div className="relative">
   {/* Background Image */}
   <img
-    src="/public/contact.png"
+    src="/contact.png"
     alt="Quality Hero"
     className="w-full md:h-[400px]"
   />

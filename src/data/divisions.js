@@ -5,7 +5,7 @@ export const divisions = [
     code: "DIV.01",
     key: "pet-supplies",
     slug: "/divisions/pet-supplies",
-    headerImage: "/public/pertssupplies.png",
+    headerImage: "/pertssupplies.png",
     name: "Pet Supplies",
     short: "Pet Supplies",
     icon: PawPrint,
@@ -23,24 +23,24 @@ export const divisions = [
     lines: [
       {
         title: "Feeding & Bowls",
-        image: "./../../public/bowls.png",
+        image: "/bowls.png",
         desc: "Stainless, ceramic and non-slip silicone feeding sets in standard and bulk-pack formats.",
       },
       {
         title: "Grooming Tools",
-        image: "./../../public/tools.png",
+        image: "/tools.png",
 
         desc: "Brushes, nail trimmers and de-shedding tools tested for coat types from short-hair to double-coat.",
       },
       {
         title: "Comfort & Bedding",
-        image: "./../../public/beds.png",
+        image: "/beds.png",
 
         desc: "Washable bedding, crate liners and travel mats built to survive a washing machine, repeatedly.",
       },
       {
         title: "Leashes & Restraints",
-        image: "./../../public/leashes.png",
+        image: "/leashes.png",
 
         desc: "Webbing and rope leashes rated by pull strength, with hardware tested to a fixed cycle count.",
       },
@@ -57,7 +57,7 @@ export const divisions = [
     code: "DIV.02",
     key: "kids-garment",
     slug: "/divisions/kids-garment",
-    headerImage: "/public/garments.png",
+    headerImage: "/garments.png",
     name: "Kids Garment",
     short: "Kids Garment",
     icon: Shirt,
@@ -74,24 +74,24 @@ export const divisions = [
     lines: [
       {
         title: "Everyday Basics",
-        image: "./../../public/everyday.png",
+        image: "/everyday.png",
 
         desc: "Cotton tees, joggers and rompers in fade-resistant dye lots, priced for repeat ordering.",
       },
       {
         title: "School & Uniform",
-        image: "./../../public/uniform.png",
+        image: "/uniform.png",
         desc: "Durable weaves in standard uniform colourways with reinforced knees and cuffs.",
       },
       {
         title: "Sleepwear",
-        image: "./../../public/sleepwear.png",
+        image: "/sleepwear.png",
 
         desc: "Flame-retardant-compliant fabrics, tag-free necklines, sized to national safety standards.",
       },
       {
         title: "Occasion Wear",
-        image: "./../../public/occasion.png",
+        image: "/occasion.png",
 
         desc: "Short-run festive and formal pieces produced against confirmed retailer orders only.",
       },
@@ -107,7 +107,7 @@ export const divisions = [
   {
     code: "DIV.03",
     key: "offset-printing-ink",
-    headerImage: "/public/ink_head.png",
+    headerImage: "/ink_head.png",
 
     slug: "/divisions/offset-printing-ink",
 
@@ -127,25 +127,25 @@ export const divisions = [
     lines: [
       {
         title: "Sheet-fed Process Inks",
-        image: "./../../public/sheet_ink.png",
+        image: "/sheet_ink.png",
 
         desc: "CMYK sets tuned for coated and uncoated stock with predictable trapping.",
       },
       {
         title: "Web Offset Inks",
-        image: "./../../public/web-ink.png",
+        image: "/web-ink.png",
 
         desc: "Fast-set formulations for heat-set and cold-set web presses running long runs.",
       },
       {
         title: "Spot & Pantone Matching",
-        image: "./../../public/matching.png",
+        image: "/matching.png",
 
         desc: "In-house colour lab matching client Pantone references with retained formula records.",
       },
       {
         title: "Specialty Coatings",
-        image: "./../../public/coating.png",
+        image: "/coating.png",
 
         desc: "UV, metallic and low-migration food-packaging-grade formulations on request.",
       },
@@ -162,7 +162,7 @@ export const divisions = [
     code: "DIV.04",
     key: "mobile-parts",
     slug: "/divisions/mobile-parts",
-    headerImage: "/public/parts_header.png",
+    headerImage: "/parts_header.png",
     name: "Mobile Parts & Accessories",
     short: "Mobile Parts",
     icon: Smartphone,
@@ -180,25 +180,25 @@ export const divisions = [
     lines: [
       {
         title: "Display Assemblies",
-        image: "./../../public/assembling.png",
+        image: "/assembling.png",
 
         desc: "LCD and OLED replacement screens graded and tested for touch response and colour accuracy.",
       },
       {
         title: "Charging & Cables",
-        image: "./../../public/cables.png",
+        image: "/cables.png",
 
         desc: "PD and QC-rated chargers, cables and power banks tested past rated cycle counts.",
       },
       {
         title: "Cases & Protection",
-        image: "./../../public/cases.png",
+        image: "/cases.png",
 
         desc: "Impact-rated cases and tempered glass, fitted per model rather than sold generically.",
       },
       {
         title: "Batteries & Small Parts",
-        image: "./../../public/batteries.png",
+        image: "/batteries.png",
 
         desc: "Cell-certified replacement batteries, connectors and flex cables with lot traceability.",
       },

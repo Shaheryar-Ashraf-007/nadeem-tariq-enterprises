@@ -29,24 +29,24 @@ const Home = () => {
   // Your exact divs in an array
   const slides = [
     <div className=" w-full aurora bg-transparent">
-      <img src="./../../public/pets.png" alt="" />
+      <img src="/pets.png" alt="" />
     </div>,
     <div className=" w-full bg-transparent">
-      <img src="./../../public/mobile.png" alt="" />
+      <img src="/mobile.png" alt="" />
     </div>,
     <div className=" w-full bg-transparent">
-      <img src="./../../public/ink.png" alt="" />
+      <img src="/ink.png" alt="" />
     </div>,
     <div className=" w-full bg-transparent">
-      <img src="./../../public/kids.png" alt="" />
+      <img src="/kids.png" alt="" />
     </div>,
   ];
 
   const images = [
-    "./../../public/conference.png",
-    "./../../public/image2.png",
-    "./../../public/image3.png",
-    "./../../public/image4.png",
+    "/conference.png",
+    "/image2.png",
+    "/image3.png",
+    "/image4.png",
   ];
 
   const divisionCardImages = [

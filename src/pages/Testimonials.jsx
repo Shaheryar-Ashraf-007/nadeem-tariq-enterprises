@@ -59,7 +59,7 @@ export default function Testimonials() {
     <div className="relative">
   {/* Background Image */}
   <img
-    src="/public/reviews.png"
+    src="/reviews.png"
     alt="Quality Hero"
     className="w-full md:h-[400px]"
   />
