@@ -55,10 +55,6 @@ const Home = () => {
     "/division-3.png",
     "/division-4.png",
   ];
-  const ethosImages = {
-    topRight: "/ethos-top.png",
-    bottomLeft: "/ethos-bottom.png",
-  };
 
   // Auto-slide logic using useEffect
   useEffect(() => {
@@ -81,7 +77,6 @@ const Home = () => {
     // We pass override classes to ensure the page can scroll and isn't cut off at 700px
     // ADDED: [font-family:var(--font-display)] to apply your CSS font globally to this page
     <VideoBackground className="!h-auto !overflow-x-hidden min-h-screen [font-family:var(--font-display)]">
-      
       {/* The old fixed background (blobs + particles) has been removed 
           because the VideoBackground is now providing the background. */}
 
@@ -125,11 +120,15 @@ const Home = () => {
 
             <div className="flex gap-8 mt-4 font-body tracking-wide">
               <div>
-                <h3 className="lg:text-4xl sm:text-2xl font-bold text-black">4</h3>
+                <h3 className="lg:text-4xl sm:text-2xl font-bold text-black">
+                  4
+                </h3>
                 <p className="sm:text-xl text-black">Core Business Units</p>
               </div>
               <div>
-                <h3 className="lg:text-4xl sm:text-2xl font-bold text-black">Global</h3>
+                <h3 className="lg:text-4xl sm:text-2xl font-bold text-black">
+                  Global
+                </h3>
                 <p className="sm:text-xl text-black">Sourcing Network</p>
               </div>
             </div>
@@ -254,7 +253,9 @@ const Home = () => {
                       className="text-[#e2231a] shrink-0 mt-1"
                     />
                     <div>
-                      <h3 className="font-bold sm:text-4xl lg:text-xl md:text-2xl ">{q}</h3>
+                      <h3 className="font-bold sm:text-4xl lg:text-xl md:text-2xl ">
+                        {q}
+                      </h3>
                       <p className="mt-1 sm:text-2xl lg:text-sm leading-relaxed text-ink/60 dark:text-paper/60">
                         {a}
                       </p>
@@ -267,14 +268,14 @@ const Home = () => {
             <div className="relative sm:h-[680px] lg:h-[600px] w-full mt-4 lg:mt-0">
               <div className="absolute top-0 right-0 w-3/4 h-3/4 overflow-hidden rounded-sm shadow-2xl z-10">
                 <img
-                  src={ethosImages.topRight}
+                  src="/ethos-top.png"
                   alt="Industrial"
                   className="h-full w-full object-cover"
                 />
               </div>
               <div className="absolute bottom-0 left-0 w-3/4 h-3/4 overflow-hidden rounded-sm shadow-2xl border-4 border-paper dark:border-ink">
                 <img
-                  src={ethosImages.bottomLeft}
+                  src="/ethos-bottom.png"
                   alt="Quality Control"
                   className="h-full w-full object-cover"
                 />
@@ -310,10 +311,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      
     </VideoBackground>
-
-    
   );
 };
 
