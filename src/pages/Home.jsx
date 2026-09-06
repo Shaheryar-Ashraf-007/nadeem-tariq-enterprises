@@ -312,6 +312,8 @@ const Home = () => {
       </section>
       
     </VideoBackground>
+
+    
   );
 };
 

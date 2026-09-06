@@ -213,9 +213,7 @@ export default function About() {
 
       <section className="border-y border-paper-line bg-paper-alt/40 dark:border-ink-line dark:bg-ink-alt/30 bg-green-600 text-white">
         <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10">
-          <span
-            className="font-body tracking-wide lg:text-xs sm: text-lg uppercase text-white"
-          >
+          <span className="font-body tracking-wide lg:text-xs sm: text-lg uppercase text-white">
             How we operate
           </span>
           <h2 className="mt-3 font-body tracking-wide lg:text-3xl font-medium sm:text-4xl">
@@ -228,7 +226,9 @@ export default function About() {
                 className="rounded-md font-body tracking-wide border border-paper-line bg-paper p-6 dark:border-ink-line dark:bg-ink"
               >
                 <v.icon size={48} style={{ color: "var(--color-brass)" }} />
-                <h3 className="mt-4 lg:text-[15px] sm:text-lg font-body tracking-wide font-semibold">{v.title}</h3>
+                <h3 className="mt-4 lg:text-[15px] sm:text-lg font-body tracking-wide font-semibold">
+                  {v.title}
+                </h3>
                 <p className="mt-2 lg:text-sm sm:text-lg font-body tracking-wide leading-relaxed text-ink/65 dark:text-paper/65">
                   {v.text}
                 </p>
@@ -274,7 +274,9 @@ export default function About() {
                   .map((n) => n[0])
                   .join("")}
               </div>
-              <h3 className="mt-4 lg:text-[15px] sm:text-lg font-body tracking-wide font-semibold">{name}</h3>
+              <h3 className="mt-4 lg:text-[15px] sm:text-lg font-body tracking-wide font-semibold">
+                {name}
+              </h3>
               <p className="mt-1 lg:text-sm sm:text-lg font-body tracking-wide text-ink/60 dark:text-paper/60">
                 {role}
               </p>
