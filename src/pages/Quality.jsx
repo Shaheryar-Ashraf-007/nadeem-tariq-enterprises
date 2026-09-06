@@ -58,7 +58,7 @@ export default function Quality() {
       Quality & Compliance
     </h1>
 
-    <p className=" font-body tracking-wide mt-4 text-center max-w-2xl text-lg md:text-xl text-gray-200">
+    <p className=" font-body tracking-wide mt-4 text-center max-w-2xl sm:text-xl md:text-2xl text-gray-200">
       Delivering trusted products through rigorous quality assurance,
       compliance, and continuous improvement across all our business divisions.
     </p>
@@ -68,9 +68,9 @@ export default function Quality() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {pillars.map((p) => (
             <div key={p.title} className="rounded-md border border-paper-line bg-paper p-6 dark:border-ink-line dark:bg-ink">
-              <p.icon size={22} style={{ color: 'var(--color-brass)' }} />
-              <h3 className="mt-4 text-[15px] font-body tracking-wide font-semibold">{p.title}</h3>
-              <p className="mt-2 text-sm font-body tracking-wide text-ink/65 dark:text-paper/65">{p.text}</p>
+              <p.icon size={48} style={{ color: 'var(--color-brass)' }} />
+              <h3 className="mt-4 lg:text-[15px] sm:text-2xl font-body tracking-wide font-semibold">{p.title}</h3>
+              <p className="mt-2 lg:text-sm sm:text-lg font-body tracking-wide text-ink/65 dark:text-paper/65">{p.text}</p>
             </div>
           ))}
         </div>
@@ -78,10 +78,10 @@ export default function Quality() {
 
       <section className="">
         <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10">
-          <span className="font-body tracking-wide text-red-600 text-xs uppercase" style={{ color: 'var(--color-brass)' }}>
+          <span className="font-body tracking-wide text-red-600 lg:text-xs sm:text-lg uppercase" >
             Division-specific compliance
           </span>
-          <h2 className="mt-3 font-body tracking-wide text-3xl font-medium sm:text-4xl">
+          <h2 className="mt-3 font-body tracking-wide text-3xl font-bold sm:text-4xl">
             What each division tests for
           </h2>
           <div className="mt-10 flex flex-col divide-y-[3px] divide-paper-line dark:divide-green-600 ">
@@ -96,11 +96,11 @@ export default function Quality() {
                       className="flex h-9 w-9 items-center justify-center rounded-sm"
                       style={{ backgroundColor: `var(--color-${div.color}-soft)` }}
                     >
-                      <Icon size={16} className='text-green-600' />
+                      <Icon size={48} className='text-green-600' />
                     </span>
-                    <span className="text-sm font-body tracking-wide font-semibold text-green-600">{name}</span>
+                    <span className="lg:text-md sm:text-xl font-body tracking-wide font-semibold text-green-600">{name}</span>
                   </div>
-                  <p className="text-sm font-body tracking-wide leading-relaxed text-ink/70 dark:text-paper/70">{desc}</p>
+                  <p className="lg:text-sm sm:text-lg font-body tracking-wide leading-relaxed text-ink/70 dark:text-paper/70">{desc}</p>
                 </div>
               )
             })}

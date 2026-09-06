@@ -72,7 +72,7 @@ export default function Testimonials() {
     <h1 className="md:text-4xl text-xl font-bold text-center">
 What buyers say after the second and third order, not just the first.    </h1>
 
-    <p className="mt-4 text-center text-md max-w-2xl md:text-xl text-gray-200">
+    <p className="mt-4 text-center sm:text-lg max-w-2xl lg:text-xl text-gray-200">
       Anyone can impress on a sample run. These are notes from clients who have reordered at least twice.
     </p>
   </div>
@@ -84,21 +84,21 @@ What buyers say after the second and third order, not just the first.    </h1>
             return (
               <figure
                 key={t.name}
-                className="flex flex-col justify-between rounded-md bg-black/95 text-white border border-paper-line bg-paper p-6 dark:border-ink-line dark:bg-ink"
+                className="flex flex-col justify-between rounded-lg bg-black/95 text-white border border-paper-line bg-paper p-6 dark:border-ink-line dark:bg-ink"
               >
                 <div>
-                  <Quote size={22} className="text-green-600 font-body tracking-wide" />
-                  <blockquote className="mt-4 font-body tracking-wide text-sm leading-relaxed text-ink/80 dark:text-paper/80">
+                  <Quote size={48} className="text-green-600 font-body tracking-wide" />
+                  <blockquote className="mt-4 font-body tracking-wide lg:text-md sm:text-lg leading-relaxed text-ink/80 dark:text-paper/80">
                     &ldquo;{t.quote}&rdquo;
                   </blockquote>
                 </div>
-                <figcaption className="mt-6  flex items-center justify-between border-t border-paper-line pt-4 dark:border-ink-line">
+                <figcaption className="mt-6 flex items-center justify-between border-t border-paper-line pt-4 dark:border-ink-line">
                   <div>
-                    <div className="text-sm font-body tracking-wide font-semibold">{t.name}</div>
-                    <div className="text-xs font-body tracking-wide text-ink/55 dark:text-paper/55">{t.role}</div>
+                    <div className="lg:text-sm sm:text-md font-body tracking-wide font-semibold">{t.name}</div>
+                    <div className="lg:text-xs sm:text-sm font-body tracking-wide text-ink/55 dark:text-paper/55">{t.role}</div>
                   </div>
                   <span
-                    className="rounded-full px-2.5 py-1 text-[11px] font-medium  bg-white text-black"
+                    className="rounded-full px-3 py-2 text-[11px] font-medium  bg-white text-black"
                     
                   >
                     {t.division}

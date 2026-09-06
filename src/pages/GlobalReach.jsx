@@ -52,16 +52,16 @@ export default function GlobalReach() {
       />
 
       <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10">
-        <span className="font-body tracking-wide text-xs uppercase  text-blue-600">
+        <span className="font-bold tracking-wide lg:text-xs sm:text-xl uppercase  text-blue-600">
           Regions served
         </span>
-        <h2 className="mt-3 font-body tracking-wide text-3xl font-medium sm:text-4xl">Where our shipments land</h2>
+        <h2 className="mt-3 font-bold tracking-wide lg:text-3xl  sm:text-4xl">Where our shipments land</h2>
 
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {regions.map((r) => (
             <div key={r.name} className="rounded-md border text-white bg-black/90 border-paper-line bg-paper p-6 dark:border-ink-line dark:bg-ink">
-              <h3 className="font-body tracking-wide text-lg font-medium">{r.name}</h3>
-              <p className="mt-1 text-sm font-body tracking-wide text-ink/55 dark:text-paper/55">{r.countries}</p>
+              <h3 className="font-body tracking-wide lg:text-lg sm:text-2xl font-medium">{r.name}</h3>
+              <p className="mt-1 lg:text-sm sm:text-md font-body tracking-wide text-ink/55 dark:text-paper/55">{r.countries}</p>
               <div className="mt-4 flex flex-wrap gap-1.5">
                 {r.divisions.map((d) => {
                   const div = divisions.find((x) => x.name === d)
@@ -69,7 +69,7 @@ export default function GlobalReach() {
                   return (
                     <span
                       key={d}
-                      className="rounded-full text-green-600 bg-white px-2.5 py-1 text-[11px] font-medium"
+                      className="rounded-full text-green-600 bg-white px-3 py-2 text-[16px] font-medium"
                      
                     >
                       {div.short}
@@ -84,17 +84,17 @@ export default function GlobalReach() {
 
       <section className="border-y border-paper-line bg-paper-alt/40 dark:border-ink-line dark:bg-ink-alt/30 bg-green-600 text-white">
         <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10">
-          <span className="font-body tracking-wide text-xs uppercase" style={{ color: 'var(--color-brass)' }}>
+          <span className="font-body tracking-wide lg:text-xs sm:text-xl uppercase" style={{ color: 'var(--color-brass)' }}>
             Logistics
           </span>
-          <h2 className="mt-3 font-body tracking-wide text-3xl font-medium sm:text-4xl">How orders actually move</h2>
+          <h2 className="mt-3 font-bold tracking-wide lg:text-3xl  sm:text-4xl">How orders actually move</h2>
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
             {logistics.map(([title, desc], i) => (
               <div key={title} className="flex gap-4">
-                <span className="font-mono text-sm text-ink/35 dark:text-paper/35">{String(i + 1).padStart(2, '0')}</span>
+                <span className="font-mono text-lg text-ink/35 dark:text-paper/35">{String(i + 1).padStart(2, '0')}</span>
                 <div>
-                  <h3 className="text-[15px] font-semibold">{title}</h3>
-                  <p className="mt-1.5 text-sm leading-relaxed text-ink/65 dark:text-paper/65">{desc}</p>
+                  <h3 className="lg:text-[15px] sm:text-2xl font-semibold">{title}</h3>
+                  <p className="mt-1.5 lg:text-sm sm:text-lg leading-relaxed text-ink/65 dark:text-paper/65">{desc}</p>
                 </div>
               </div>
             ))}

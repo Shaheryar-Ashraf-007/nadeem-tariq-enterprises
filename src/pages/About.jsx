@@ -136,17 +136,17 @@ export default function About() {
         </div>
       </div>
 
-      <div className="font-body text-xs uppercase tracking-[0.22em] text-blue-600 pt-12 md:px-20 px-4">
+      <div className="font-bold lg:text-xs sm:text-lg uppercase tracking-[0.22em] text-blue-600 pt-12 sm:px-8">
         About the company
       </div>
       <div
-        className="mt-3 font-body tracking-wide text-3xl font-medium md:px-12 px-8 text-center"
+        className="mt-3 font-body tracking-wide lg:text-3xl  sm: text-4xl font-medium md:px-12 px-8 text-center"
         style={{ color: "var(--color-brass)" }}
       >
         Twenty-seven years of taking on the parts of the order nobody else
         wanted.
       </div>
-      <div className="mt-4 font-body tracking-wide text-sm leading-relaxed text-ink/65 dark:text-paper/65 text-center px-12 md:px-20">
+      <div className="mt-4 font-body tracking-wide lg:text-sm  sm:text-xl leading-relaxed text-ink/65 dark:text-paper/65 text-center px-12 md:px-20">
         Nadeem Tariq Enterprises began as a printing ink formulator in Lahore.
         Every division since has started the same way: a client asked us to
         solve one specific sourcing problem, and we built a team around it. We
@@ -159,20 +159,20 @@ export default function About() {
       <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10">
         <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
-            <span className="font-body tracking-wide text-xs uppercase text-blue-600">
+            <span className="font-bold tracking-wide lg:text-xs sm:text-lg uppercase text-blue-600">
               Timeline
             </span>
-            <h2 className="mt-3 font-body tracking-wide text-3xl font-medium tracking-tight ">
+            <h2 className="mt-3 font-body tracking-wide lg:text-3xl sm:text-4xl font-medium tracking-tight ">
               How four divisions became one
             </h2>
-            <p className="mt-4 font-body tracking-wide text-sm leading-relaxed text-ink/65 dark:text-paper/65">
+            <p className="mt-4 font-body tracking-wide lg:text-sm sm:text-2xl leading-relaxed text-ink/65 dark:text-paper/65">
               Our divisions were established to address the evolving needs of
               our clients and the unique requirements of different industries.
               Rather than following a one-size-fits-all approach, each division
               was built around specialized expertise, market understanding, and
               dedicated teams focused on delivering reliable solutions.
             </p>
-            <p className="mt-4 font-body tracking-wide text-sm leading-relaxed text-ink/65 dark:text-paper/65">
+            <p className="mt-4 font-body tracking-wide lg:text-sm sm:text-2xl leading-relaxed text-ink/65 dark:text-paper/65">
               While each division maintains its own specialized operations, all
               teams benefit from our shared infrastructure, including
               centralized logistics, quality control systems, supplier networks,
@@ -182,7 +182,7 @@ export default function About() {
               scalability, and operational strength of an established
               organization.
             </p>
-            <p className="mt-4 font-body tracking-wide text-sm leading-relaxed text-ink/65 dark:text-paper/65">
+            <p className="mt-4 font-body tracking-wide lg:text-sm sm:text-2xl leading-relaxed text-ink/65 dark:text-paper/65">
               We believe strong partnerships are built through trust,
               transparency, and consistent performance. Every division works
               closely with clients to understand their requirements, improve
@@ -200,10 +200,10 @@ export default function About() {
                 key={t.year}
                 className="grid grid-cols-[5rem_1fr] gap-4 py-5 sm:grid-cols-[6rem_1fr]"
               >
-                <span className="font-body tracking-wide text-xl font-bold text-green-600">
+                <span className="font-body tracking-wide lg:text-xl sm:text-3xl font-bold text-green-600">
                   {t.year}
                 </span>
-                <p className="font-body tracking-wide text-sm leading-relaxed text-ink/75 dark:text-paper/75 sm:text-base">
+                <p className="font-body tracking-wide lg:text-sm sm:text-2xl leading-relaxed text-ink/75 dark:text-paper/75">
                   {t.text}
                 </p>
               </li>
@@ -215,12 +215,11 @@ export default function About() {
       <section className="border-y border-paper-line bg-paper-alt/40 dark:border-ink-line dark:bg-ink-alt/30 bg-green-600 text-white">
         <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10">
           <span
-            className="font-body tracking-wide text-xs uppercase
-            text-white"
+            className="font-body tracking-wide lg:text-xs sm: text-lg uppercase text-white"
           >
             How we operate
           </span>
-          <h2 className="mt-3 font-body tracking-wide text-3xl font-medium sm:text-4xl">
+          <h2 className="mt-3 font-body tracking-wide lg:text-3xl font-medium sm:text-4xl">
             The four rules that survive every division
           </h2>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 ">
@@ -229,9 +228,9 @@ export default function About() {
                 key={v.title}
                 className="rounded-md font-body tracking-wide border border-paper-line bg-paper p-6 dark:border-ink-line dark:bg-ink"
               >
-                <v.icon size={22} style={{ color: "var(--color-brass)" }} />
-                <h3 className="mt-4 text-[15px] font-body tracking-wide font-semibold">{v.title}</h3>
-                <p className="mt-2 text-sm font-body tracking-wide leading-relaxed text-ink/65 dark:text-paper/65">
+                <v.icon size={48} style={{ color: "var(--color-brass)" }} />
+                <h3 className="mt-4 lg:text-[15px] sm:text-lg font-body tracking-wide font-semibold">{v.title}</h3>
+                <p className="mt-2 lg:text-sm sm:text-lg font-body tracking-wide leading-relaxed text-ink/65 dark:text-paper/65">
                   {v.text}
                 </p>
               </div>
@@ -241,10 +240,10 @@ export default function About() {
       </section>
 
       <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10">
-        <span className="font-body tracking-wide text-xs uppercase text-blue-600">
+        <span className="font-bold tracking-wide lg:text-xs sm:text-xl uppercase text-blue-600">
           Leadership
         </span>
-        <h2 className="mt-3 font-body tracking-wide text-3xl font-medium sm:text-4xl">
+        <h2 className="mt-3 font-body tracking-wide lg:text-3xl font-medium sm:text-4xl">
           Division desks
         </h2>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -270,17 +269,17 @@ export default function About() {
               key={name}
               className="rounded-md border border-paper-line bg-paper p-6 dark:border-ink-line dark:bg-ink bg-black/90 text-white"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-full font-body tracking-wide text-lg italic border border-white">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full font-body tracking-wide lg:text-lg sm:text-xl italic border border-white">
                 {name
                   .split(" ")
                   .map((n) => n[0])
                   .join("")}
               </div>
-              <h3 className="mt-4 text-[15px] font-body tracking-wide font-semibold">{name}</h3>
-              <p className="mt-1 text-sm font-body tracking-wide text-ink/60 dark:text-paper/60">
+              <h3 className="mt-4 lg:text-[15px] sm:text-lg font-body tracking-wide font-semibold">{name}</h3>
+              <p className="mt-1 lg:text-sm sm:text-lg font-body tracking-wide text-ink/60 dark:text-paper/60">
                 {role}
               </p>
-              <p className="mt-2 text-xs font-body tracking-wide leading-relaxed text-ink/50 dark:text-paper/50">
+              <p className="mt-2 lg:text-xs sm:text-sm font-body tracking-wide leading-relaxed text-ink/50 dark:text-paper/50">
                 {note}
               </p>
             </div>

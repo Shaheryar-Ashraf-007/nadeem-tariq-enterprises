@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { Menu, X, ChevronDown, Search } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { divisions } from "../data/divisions";
 
 // Corporate nav links
@@ -39,7 +39,7 @@ export default function Navbar() {
           2. MAIN NAVBAR
       ========================================= */}
       {/* ADDED: items-center and justify-between here to align everything properly */}
-      <div className="mx-auto flex h-20 max-w-7xl gap-12 justify-between px-6 sm:px-8 lg:px-16">
+      <div className="mx-auto flex sm:h-24 lg:h-20 max-w-7xl gap-8 justify-between px-6 sm:px-8 lg:px-16">
         {/* LOGO LINK */}
         {/* ADDED: shrink-0 so the logo never gets squished */}
         <Link to="/" end className="shrink-0 flex items-center">
@@ -47,12 +47,12 @@ export default function Navbar() {
           <img
             src="/logo1.png"
             alt="Company Logo"
-            className="md:h-16 h-12 object-contain"
+            className="lg:h-16 sm:h-20 object-contain"
           />
-          <span className=" leading-tight tracking-wider font-semibold text-gray-700">
+          <span className="lg:text-lg sm:text-2xl leading-tight tracking-wider font-semibold text-gray-700">
             Nadeem Tariq
             <br />
-            <span className="font-medium text-green-600 tracking-[0.08em]">ENTERPRISES</span>
+            <span className="font-medium lg:text-lg sm:text-2xl text-green-600 tracking-[0.08em]">ENTERPRISES</span>
           </span>
         </Link>
 
@@ -153,7 +153,7 @@ export default function Navbar() {
             className="lg:hidden text-[#003c71] focus:outline-none"
             aria-label="Toggle Menu"
           >
-            {open ? <X size={28} /> : <Menu size={28} />}
+            {open ? <X size={48} /> : <Menu size = {48} />}
           </button>
         </div>
       </div>
@@ -169,7 +169,7 @@ export default function Navbar() {
               end
               onClick={() => setOpen(false)}
               className={({ isActive }) =>
-                `py-3 text-lg font-semibold ${isActive ? "text-[#003c71]" : "text-gray-700"}`
+                `py-3 text-2xl font-semibold ${isActive ? "text-[#003c71]" : "text-gray-700"}`
               }
             >
               Home
@@ -177,7 +177,7 @@ export default function Navbar() {
 
             {/* Mobile Divisions Grid */}
             <div className="py-3">
-              <span className="mb-3 block font-mono text-[11px] uppercase tracking-[0.20em] text-[#003c71]/60">
+              <span className="mb-3 block font-mono text-[16px] uppercase tracking-[0.20em] text-[#003c71]/60">
                 Divisions
               </span>
               <div className="grid grid-cols-2 gap-3">
@@ -189,17 +189,17 @@ export default function Navbar() {
                     className="flex flex-col items-center justify-center gap-2 rounded-xl border border-gray-100 bg-gray-50/50 p-4 text-center transition-all hover:bg-gray-50 hover:border-[#003c71]/20"
                   >
                     <span
-                      className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-gray-100 bg-white shadow-sm"
+                      className="flex h-24 w-24 shrink-0 items-center  justify-center rounded-xl border border-gray-100 bg-white shadow-sm"
                       style={{
                         backgroundColor: `var(--color-${d.color}-soft)`,
                       }}
                     >
                       <d.icon
-                        size={18}
+                        size={36}
                         style={{ color: `var(--color-${d.color})` }}
                       />
                     </span>
-                    <span className="text-xs font-semibold text-[#003c71]">
+                    <span className="text-xl font-semibold text-[#003c71]">
                       {d.name}
                     </span>
                   </Link>
@@ -214,7 +214,7 @@ export default function Navbar() {
                 to={l.to}
                 onClick={() => setOpen(false)}
                 className={({ isActive }) =>
-                  `py-3 text-lg font-semibold border-b border-gray-50 ${isActive ? "text-[#003c71]" : "text-gray-700"}`
+                  `py-3 text-2xl font-semibold border-b border-gray-50 ${isActive ? "text-[#003c71]" : "text-gray-700"}`
                 }
               >
                 {l.label}
@@ -225,7 +225,7 @@ export default function Navbar() {
             <Link
               to="/contact"
               onClick={() => setOpen(false)}
-              className="mt-4 flex items-center justify-center bg-[#e2231a] text-white px-6 py-3 rounded text-base font-semibold hover:bg-[#c41d16] transition-colors"
+              className="mt-4 flex items-center justify-center bg-[#e2231a] text-white px-6 py-6 rounded text-2xl font-semibold hover:bg-[#c41d16] transition-colors"
             >
               Get in Touch
             </Link>

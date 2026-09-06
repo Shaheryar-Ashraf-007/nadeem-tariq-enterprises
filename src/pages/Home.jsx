@@ -99,23 +99,23 @@ const Home = () => {
 
       {/* ADDED bg-transparent here */}
       <section className=" mt-8 py-14 sm:py-20 lg:py-0 bg-transparent bg-[#ffff]">
-        <div className="max-w-6xl mx-auto px-4 md:px-4 grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl mx-auto px-4 md:px-4 grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
-          <div className="flex flex-col gap-6">
-            <span className="text-sm font-semibold tracking-widest text-blue-600 uppercase">
+          <div className=" flex flex-col gap-6">
+            <span className="text-md font-semibold tracking-widest text-blue-600 uppercase">
               Who We Are
             </span>
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-black leading-tight">
+            <h2 className="text-4xl lg:text-5xl font-display font-bold text-black leading-tight">
               Delivering Quality Across Diverse Industries
             </h2>
-            <p className="text-lg leading-relaxed tracking-wider font-body">
+            <p className="lg:text-lg sm:text-2xl leading-relaxed tracking-wider font-body">
               We are a diversified business committed to delivering premium
               products across multiple industries. From high-quality pet
               supplies and innovative mobile accessories to professional offset
               printing inks and stylish kids' garments, we focus on providing
               products that combine quality, reliability, and value.
             </p>
-            <p className="text-lg text-black leading-relaxed tracking-wider font-body">
+            <p className="lg:text-lg sm:text-2xl text-black leading-relaxed tracking-wider font-body">
               With a customer-first approach and strong partnerships with
               trusted manufacturers worldwide, we continuously strive to meet
               evolving market demands. Our dedication to excellence, innovation,
@@ -125,11 +125,11 @@ const Home = () => {
 
             <div className="flex gap-8 mt-4 font-body tracking-wide">
               <div>
-                <h3 className="text-3xl font-bold text-black">4</h3>
+                <h3 className="text-3xl sm:text-2xl font-bold text-black">4</h3>
                 <p className="text-black">Core Business Units</p>
               </div>
               <div>
-                <h3 className="text-3xl font-bold text-black">Global</h3>
+                <h3 className="text-3xl sm:text-2xl font-bold text-black">Global</h3>
                 <p className="text-black">Sourcing Network</p>
               </div>
             </div>
@@ -137,7 +137,7 @@ const Home = () => {
 
           {/* Image Content */}
           <div className="relative">
-            <div className="relative w-full h-[450px] overflow-hidden rounded-2xl shadow-xl">
+            <div className="relative w-full sm:h-[650px] lg:h-[450px] overflow-hidden rounded-2xl shadow-xl">
               <div
                 className="flex w-full h-full transition-transform duration-700 ease-in-out"
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -147,7 +147,7 @@ const Home = () => {
                     key={index}
                     src={src}
                     alt={`Our Team ${index + 1}`}
-                    className="w-full h-[450px] object-cover flex-shrink-0"
+                    className="w-full sm:h-[650px] lg:h-[450px] object-cover flex-shrink-0"
                   />
                 ))}
               </div>
@@ -161,10 +161,10 @@ const Home = () => {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-10 lg:px-16 ">
           <div className="flex items-end justify-between mb-8 sm:mb-12 text-black">
             <div>
-              <span className="text-sm font-semibold tracking-widest text-blue-600 uppercase">
+              <span className="sm:text-xl md:text-2xl lg:text-2xl font-semibold tracking-widest text-blue-600 uppercase">
                 Our Portfolio
               </span>
-              <h2 className="mt-2 sm:mt-3 text-2xl sm:text-4xl font-bold tracking-tight lg:text-5xl text-black">
+              <h2 className="mt-2 sm:mt-3 text-2xl sm:text-6xl font-bold tracking-tight lg:text-5xl text-black">
                 Four industries, indexed
               </h2>
             </div>
@@ -174,14 +174,14 @@ const Home = () => {
                 aria-label="Scroll left"
                 className="p-3 border border-ink/10 dark:border-paper/10 hover:bg-ink/5 dark:hover:bg-paper/5 transition-colors rounded-sm"
               >
-                <ChevronLeft size={20} />
+                <ChevronLeft size={24} />
               </button>
               <button
                 onClick={() => scroll("right")}
                 aria-label="Scroll right"
                 className="p-3 border border-ink/10 dark:border-paper/10 hover:bg-ink/5 dark:hover:bg-paper/5 transition-colors rounded-sm"
               >
-                <ChevronRight size={20} />
+                <ChevronRight size={24} />
               </button>
             </div>
           </div>
@@ -189,7 +189,7 @@ const Home = () => {
 
         <div
           ref={scrollContainerRef}
-          className="flex gap-4 sm:gap-6 overflow-x-auto  scrollbar-hide px-4 sm:px-6 md:px-10 lg:px-16 pb-4"
+          className="flex gap-4 sm:gap-6 overflow-x-auto scrollbar-hide px-4 sm:px-6 md:px-10 lg:px-16 pb-4"
         >
           {divisions.map((d, i) => {
             return (
@@ -201,18 +201,18 @@ const Home = () => {
                 <img
                   src={divisionCardImages[i] || "/fallback.jpg"}
                   alt={d.name}
-                  className="absolute inset-0 h-full w-full object-cover transition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-105"
+                  className="absolute inset-0 h-[700px] w-full object-cover transition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
 
                 <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-8 z-10 transition-transform duration-500 group-hover:-translate-y-2">
-                  <span className="text-blue-600 font-body text-xs uppercase tracking-widest">
+                  <span className="text-blue-600 font-body text-md uppercase tracking-widest">
                     {d.code}
                   </span>
                   <h3 className="mt-2 text-xl sm:text-2xl lg:text-3xl font-body font-bold text-paper">
                     {d.name}
                   </h3>
-                  <div className="mt-3 sm:mt-4 flex items-center gap-2 text-paper/70 text-sm opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="mt-3 sm:mt-4 flex items-center gap-2 text-paper/70 text-lg opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300">
                     View Catalog <ArrowUpRight size={14} />
                   </div>
                 </div>
@@ -227,10 +227,10 @@ const Home = () => {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-10 lg:px-16">
           <div className="grid lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-center">
             <div>
-              <span className="text-sm font-semibold tracking-widest uppercase text-[#e2231a]">
+              <span className="sm:text-xl md:text-2xl lg:text-xl font-semibold tracking-widest uppercase text-[#e2231a]">
                 Our Ethos
               </span>
-              <h2 className="mt-3 sm:mt-4 text-2xl sm:text-4xl font-bold tracking-wider lg:text-5xl leading-tight">
+              <h2 className="mt-3 sm:mt-4 lg:text-xl sm:text-5xl font-bold tracking-wider lg:text-5xl leading-tight">
                 Different products. The same three questions, every time.
               </h2>
               <div className="mt-6 sm:mt-10 space-y-6 sm:space-y-8 tracking-wide">
@@ -250,12 +250,12 @@ const Home = () => {
                 ].map(([q, a]) => (
                   <div key={q} className="flex gap-4 sm:gap-5">
                     <CheckCircle2
-                      size={22}
+                      size={24}
                       className="text-[#e2231a] shrink-0 mt-1"
                     />
                     <div>
-                      <h3 className="text-base sm:text-lg font-bold">{q}</h3>
-                      <p className="mt-1 text-sm leading-relaxed text-ink/60 dark:text-paper/60">
+                      <h3 className="font-bold sm:text-4xl lg:text-xl md:text-2xl ">{q}</h3>
+                      <p className="mt-1 sm:text-2xl lg:text-sm leading-relaxed text-ink/60 dark:text-paper/60">
                         {a}
                       </p>
                     </div>
@@ -264,7 +264,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="relative h-[360px] sm:h-[480px] lg:h-[600px] w-full mt-4 lg:mt-0">
+            <div className="relative h-[360px] sm:h-[680px] lg:h-[600px] w-full mt-4 lg:mt-0">
               <div className="absolute top-0 right-0 w-3/4 h-3/4 overflow-hidden rounded-sm shadow-2xl z-10">
                 <img
                   src={ethosImages.topRight}
@@ -291,10 +291,10 @@ const Home = () => {
 
             <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 sm:gap-10 rounded-full ">
               <div className="max-w-2xl">
-                <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-white tracking-wide leading-tight">
+                <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white tracking-wide leading-tight">
                   Have a spec sheet or a sample in mind?
                 </h2>
-                <p className="mt-3 sm:mt-4 text-paper/80 text-base sm:text-lg tracking-wide">
+                <p className="mt-3 sm:mt-4 text-paper/80 text-base sm:text-xl tracking-wide">
                   Send it to any division and we&rsquo;ll reply with sourcing
                   timeline and a sample quote within three working days.
                 </p>
