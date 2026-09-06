@@ -102,7 +102,7 @@ const Home = () => {
         <div className="max-w-6xl mx-auto px-4 md:px-4 grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className=" flex flex-col gap-6">
-            <span className="text-md font-semibold tracking-widest text-blue-600 uppercase">
+            <span className="lg:text-2xl sm:text-xl font-semibold tracking-widest text-blue-600 uppercase">
               Who We Are
             </span>
             <h2 className="text-4xl lg:text-5xl font-display font-bold text-black leading-tight">
@@ -125,19 +125,19 @@ const Home = () => {
 
             <div className="flex gap-8 mt-4 font-body tracking-wide">
               <div>
-                <h3 className="text-3xl sm:text-2xl font-bold text-black">4</h3>
-                <p className="text-black">Core Business Units</p>
+                <h3 className="lg:text-4xl sm:text-2xl font-bold text-black">4</h3>
+                <p className="sm:text-xl text-black">Core Business Units</p>
               </div>
               <div>
-                <h3 className="text-3xl sm:text-2xl font-bold text-black">Global</h3>
-                <p className="text-black">Sourcing Network</p>
+                <h3 className="lg:text-4xl sm:text-2xl font-bold text-black">Global</h3>
+                <p className="sm:text-xl text-black">Sourcing Network</p>
               </div>
             </div>
           </div>
 
           {/* Image Content */}
           <div className="relative">
-            <div className="relative w-full sm:h-[650px] lg:h-[450px] overflow-hidden rounded-2xl shadow-xl">
+            <div className="relative w-full sm:h-[750px] lg:h-[450px] overflow-hidden rounded-2xl shadow-xl">
               <div
                 className="flex w-full h-full transition-transform duration-700 ease-in-out"
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -147,7 +147,7 @@ const Home = () => {
                     key={index}
                     src={src}
                     alt={`Our Team ${index + 1}`}
-                    className="w-full sm:h-[650px] lg:h-[450px] object-cover flex-shrink-0"
+                    className="w-full sm:h-[750px] lg:h-[450px] object-cover flex-shrink-0"
                   />
                 ))}
               </div>
@@ -161,7 +161,7 @@ const Home = () => {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-10 lg:px-16 ">
           <div className="flex items-end justify-between mb-8 sm:mb-12 text-black">
             <div>
-              <span className="sm:text-xl md:text-2xl lg:text-2xl font-semibold tracking-widest text-blue-600 uppercase">
+              <span className="sm:text-xl lgd:text-2xl lg:text-2xl font-semibold tracking-widest text-blue-600 uppercase">
                 Our Portfolio
               </span>
               <h2 className="mt-2 sm:mt-3 text-2xl sm:text-6xl font-bold tracking-tight lg:text-5xl text-black">
@@ -264,7 +264,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="relative h-[360px] sm:h-[680px] lg:h-[600px] w-full mt-4 lg:mt-0">
+            <div className="relative sm:h-[680px] lg:h-[600px] w-full mt-4 lg:mt-0">
               <div className="absolute top-0 right-0 w-3/4 h-3/4 overflow-hidden rounded-sm shadow-2xl z-10">
                 <img
                   src={ethosImages.topRight}

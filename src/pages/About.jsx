@@ -1,5 +1,4 @@
 import { useRef, useState, useEffect } from "react";
-import PageHeader from "../components/PageHeader";
 import {
   Target,
   ShieldCheck,
@@ -146,7 +145,7 @@ export default function About() {
         Twenty-seven years of taking on the parts of the order nobody else
         wanted.
       </div>
-      <div className="mt-4 font-body tracking-wide lg:text-sm  sm:text-xl leading-relaxed text-ink/65 dark:text-paper/65 text-center px-12 md:px-20">
+      <div className="mt-4 font-body tracking-wide lg:text-sm  sm:text-2xl leading-relaxed text-ink/65 dark:text-paper/65 text-center px-12 md:px-20">
         Nadeem Tariq Enterprises began as a printing ink formulator in Lahore.
         Every division since has started the same way: a client asked us to
         solve one specific sourcing problem, and we built a team around it. We

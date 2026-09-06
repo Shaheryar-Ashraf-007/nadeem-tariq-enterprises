@@ -8,16 +8,16 @@ export default function Footer() {
     <footer className="relative z-20 bg-gray-100 dark:bg-gray-50">
       <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8 lg:px-10">
               
-              <span className="font-body tracking-wide w-12 text-base font-semibold sm:text-2xl lg:text-2xl ">Nadeem Tariq Enterprises</span>
+              <span className="font-body tracking-wide w-12 text-base font-semibold sm:text-4xl lg:text-2xl ">Nadeem Tariq Enterprises</span>
               <br />
             
-            <span className="mt-4 max-w-xs text-md leading-relaxed text-ink/65 dark:text-paper/65 ">
+            <span className="mt-4 max-w-xs lg:text-md sm:text-2xl leading-relaxed text-ink/65 dark:text-paper/65 ">
               A diversified trading house operating four independent <br />
               divisions from one shared
               standard of sourcing, testing <br /> and delivery, since 2011.
             </span>
 
-        <div className="pt-12 grid gap-10 md:grid-cols-3 grid-cols-2">
+        <div className="pt-12 grid gap-6 md:grid-cols-3 grid-cols-2">
 
           <div>
             <h4 className="font-body text-red-600 sm:text-lg lg:text-lg font-bold uppercase tracking-wide text-ink/50 dark:text-paper/50">
@@ -87,8 +87,8 @@ export default function Footer() {
 
         
       </div>
-      <div className=" bg-black text-white py-4 md:px-16 px-4 ">
-          <span className="">&copy; {year} nadeementerprises.com.pk All rights reserved.</span>
+      <div className=" bg-black text-white py-4 md:px-16 sm:px-4 ">
+          <span className="lg:text-md sm:text-sm">&copy; {year} nadeementerprises.com.pk All rights reserved.</span>
         </div>
     </footer>
   )
