@@ -76,21 +76,23 @@ const Home = () => {
     // Wrap the entire page in your VideoBackground component.
     // We pass override classes to ensure the page can scroll and isn't cut off at 700px
     // ADDED: [font-family:var(--font-display)] to apply your CSS font globally to this page
-    <VideoBackground className="!h-auto !overflow-x-hidden min-h-screen [font-family:var(--font-display)]">
-      {/* The old fixed background (blobs + particles) has been removed 
-          because the VideoBackground is now providing the background. */}
-
-      {/* Slider Track */}
+    <VideoBackground className="!h-auto !min-h-screen !w-full overflow-x-hidden [font-family:var(--font-display)]">
+  {/* Slider Track */}
+  <div
+    className="flex w-full max-w-full transition-transform duration-700 ease-in-out"
+    style={{
+      transform: `translateX(-${currentSlide * 100}%)`,
+    }}
+  >
+    {slides.map((slide, index) => (
       <div
-        className="flex transition-transform duration-700 ease-in-out"
-        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+        key={index}
+        className="w-full min-w-0 flex-shrink-0 overflow-hidden"
       >
-        {slides.map((slide, index) => (
-          <div key={index} className="w-full flex-shrink-0">
-            {slide}
-          </div>
-        ))}
+        {slide}
       </div>
+    ))}
+  </div>
 
       {/* ADDED bg-transparent here */}
       <section className=" mt-8 py-14 sm:py-20 lg:py-0 bg-transparent bg-[#ffff]">
