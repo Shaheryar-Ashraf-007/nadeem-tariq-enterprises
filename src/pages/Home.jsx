@@ -28,19 +28,38 @@ const Home = () => {
 
   // Your exact divs in an array
   const slides = [
-    <div className=" w-full aurora bg-transparent">
-      <img src="/pets.png" alt="" />
-    </div>,
-    <div className=" w-full bg-transparent">
-      <img src="/mobile.png" alt="" />
-    </div>,
-    <div className=" w-full bg-transparent">
-      <img src="/ink.png" alt="" />
-    </div>,
-    <div className=" w-full bg-transparent">
-      <img src="/kids.png" alt="" />
-    </div>,
-  ];
+  <div className="w-full bg-transparent">
+    <img
+      src="/pets.png"
+      alt=""
+      className="block w-full h-auto"
+    />
+  </div>,
+
+  <div className="w-full bg-transparent">
+    <img
+      src="/mobile.png"
+      alt=""
+      className="block w-full h-auto"
+    />
+  </div>,
+
+  <div className="w-full bg-transparent">
+    <img
+      src="/ink.png"
+      alt=""
+      className="block w-full h-auto"
+    />
+  </div>,
+
+  <div className="w-full bg-transparent">
+    <img
+      src="/kids.png"
+      alt=""
+      className="block w-full h-auto"
+    />
+  </div>,
+];
 
   const images = [
     "/conference.png",
@@ -78,20 +97,24 @@ const Home = () => {
     // ADDED: [font-family:var(--font-display)] to apply your CSS font globally to this page
     <VideoBackground className="!h-auto !min-h-screen !w-full overflow-x-hidden [font-family:var(--font-display)]">
   {/* Slider Track */}
+  {/* Slider Container */}
+<div className="w-full overflow-hidden">
+  {/* Slider Track */}
   <div
-  className="flex w-full transition-transform duration-700 ease-in-out"
-  style={{
-    transform: `translateX(-${currentSlide * 100}%)`,
-  }}
->
-  {slides.map((slide, index) => (
-    <div
-      key={index}
-      className="w-full min-w-full flex-shrink-0 flex items-center justify-center overflow-hidden"
-    >
-      {slide}
-    </div>
-  ))}
+    className="flex w-full transition-transform duration-700 ease-in-out"
+    style={{
+      transform: `translateX(-${currentSlide * 100}%)`,
+    }}
+  >
+    {slides.map((slide, index) => (
+      <div
+        key={index}
+        className="w-full min-w-full flex-shrink-0"
+      >
+        {slide}
+      </div>
+    ))}
+  </div>
 </div>
 
       {/* ADDED bg-transparent here */}
