@@ -79,20 +79,20 @@ const Home = () => {
     <VideoBackground className="!h-auto !min-h-screen !w-full overflow-x-hidden [font-family:var(--font-display)]">
   {/* Slider Track */}
   <div
-    className="flex w-full max-w-full transition-transform duration-700 ease-in-out"
-    style={{
-      transform: `translateX(-${currentSlide * 100}%)`,
-    }}
-  >
-    {slides.map((slide, index) => (
-      <div
-        key={index}
-        className="w-screen flex-shrink-0 sm:flex items-center justify-center bg-transparent"
-      >
-        {slide}
-      </div>
-    ))}
-  </div>
+  className="flex w-full transition-transform duration-700 ease-in-out"
+  style={{
+    transform: `translateX(-${currentSlide * 100}%)`,
+  }}
+>
+  {slides.map((slide, index) => (
+    <div
+      key={index}
+      className="w-full min-w-full flex-shrink-0 flex items-center justify-center overflow-hidden"
+    >
+      {slide}
+    </div>
+  ))}
+</div>
 
       {/* ADDED bg-transparent here */}
       <section className=" mt-8 py-14 sm:py-20 lg:py-0 bg-transparent bg-[#ffff]">
