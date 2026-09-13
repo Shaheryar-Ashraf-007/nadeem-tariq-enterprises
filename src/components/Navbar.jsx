@@ -42,7 +42,7 @@ export default function Navbar() {
       <div className="mx-auto flex sm:h-24 lg:h-20 max-w-7xl gap-8 justify-between px-6 sm:px-8 lg:px-16">
         {/* LOGO LINK */}
         {/* ADDED: shrink-0 so the logo never gets squished */}
-        <Link to="/" end className="shrink-0 flex items-center">
+        <Link to="/" end className="shrink-0 flex items-center ">
           {/* FIXED: src path and added sizing classes h-12 w-auto */}
           <img
             src="/logo1.png"

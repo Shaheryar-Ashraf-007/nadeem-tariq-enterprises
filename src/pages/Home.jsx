@@ -87,7 +87,7 @@ const Home = () => {
     {slides.map((slide, index) => (
       <div
         key={index}
-        className="w-full min-w-0 flex-shrink-0 overflow-hidden"
+        className="w-screen flex-shrink-0 sm:flex items-center justify-center bg-transparent"
       >
         {slide}
       </div>
@@ -268,7 +268,7 @@ const Home = () => {
             </div>
 
             <div className="relative sm:h-[680px] lg:h-[600px] w-full mt-4 lg:mt-0">
-              <div className="absolute top-0 right-0 w-3/4 h-3/4 overflow-hidden rounded-sm shadow-2xl z-10">
+              <div className="absolute top-0 right-0 w-3/4 h-3/4 overflow-hidden rounded-sm shadow-2xl z-10 border-4 border-paper dark:border-ink">
                 <img
                   src="/ethos-top.png"
                   alt="Industrial"
